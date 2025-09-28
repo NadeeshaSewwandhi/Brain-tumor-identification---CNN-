@@ -18,19 +18,19 @@ Features :
 
 Workflow :
 
->> Dataset Preparation
+1. Dataset Preparation
 MRI images are categorized into two folders: yes (tumor present) and no (no tumor).
 Images are resized to 64x64 pixels for uniform input size.
 
->> Model Training (Python script)
+2. Model Training (Python script)
 A CNN model is built using Keras.
 Data is normalized and split into training/testing sets.
 Model is trained for 10 epochs and saved as BrainTumor10EpochsCategorical.h5.
 
->> Prediction Script
+3. Prediction Script
 A test script reads an image, preprocesses it, and predicts the class using the trained model.
 
->> Flask Web App
+4. Flask Web App
 Users access the homepage (index.html).
 Upload an MRI image through the web interface.
 The backend preprocesses the image, runs prediction, and returns the result.
